@@ -13,9 +13,9 @@ let h1 = document.querySelector("h1");
 let modeButtons = document.querySelectorAll(".mode");
 let squares = document.querySelectorAll(".square");
 function randomColor() {
-    let r = Math.floor(Math.random() * 255);
-    let g = Math.floor(Math.random() * 255);
-    let b = Math.floor(Math.random() * 255);
+    let r = Math.floor(Math.random() * (Math.pow(15, 2)));
+    let g = Math.floor(Math.random() * (Math.pow(15, 2)));
+    let b = Math.floor(Math.random() * (Math.pow(15, 2)));
     return "rgb(" + r + ", " + g + ", " + b + ")";
 }
 init();
